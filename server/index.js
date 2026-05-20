@@ -16,7 +16,7 @@ app.get('/employees', async (req, res) => {
   try {
     const { q, sortBy = 'name', order = 'asc' } = req.query;
 
-    const allowedSortColumns = ['name', 'hireDate', 'salary'];
+    const allowedSortColumns = ['empId', 'name', 'hireDate', 'salary'];
     const safeSortBy = allowedSortColumns.includes(sortBy) ? sortBy : 'name';
     const safeOrder = order === 'desc' ? 'DESC' : 'ASC';
 
