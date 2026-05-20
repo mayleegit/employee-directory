@@ -141,7 +141,19 @@ src/services/api.js
 
 ```text
 employee-directory/
+├── public/
+│   ├── favicon.svg
+│   └── icons.svg
+├── server/
+│   ├── db.js
+│   └── index.js
+├── sql/
+│   └── schema.sql
 ├── src/
+│   ├── assets/
+│   │   ├── hero.png
+│   │   ├── vite.svg
+│   │   └── vue.svg
 │   ├── components/
 │   │   ├── EmployeeForm.vue
 │   │   ├── EmployeeList.vue
@@ -151,15 +163,14 @@ employee-directory/
 │   ├── App.vue
 │   ├── main.js
 │   └── style.css
-├── server/
-│   ├── db.js
-│   └── index.js
-├── sql/
-│   └── schema.sql
+├── .gitignore
+├── github-link.txt
 ├── index.html
+├── package-lock.json
 ├── package.json
-├── vite.config.js
-└── README.md
+├── README.md
+├── report.pdf
+└── vite.config.js
 ```
 
 ## Author
