@@ -1,17 +1,8 @@
 <script setup>
 defineProps({
-    searchQuery: {
-        type: String,
-        default: ''
-    },
-    sortBy: {
-        type: String,
-        default: 'name'
-    },
-    order: {
-        type: String,
-        default: 'asc'
-    }
+    searchQuery: String,
+    sortBy: String,
+    order: String
 });
 
 const emit = defineEmits([
@@ -33,6 +24,7 @@ const emit = defineEmits([
     />
 
     <select :value="sortBy" @change="emit('update:sortBy', $event.target.value)">
+        <option value="empId">Sort by Employee ID</option>
         <option value="name">Sort by Name</option>
         <option value="hireDate">Sort by Hire Date</option>
         <option value="salary">Sort by Salary</option>
